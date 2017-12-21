@@ -1,6 +1,6 @@
 {
   "name": "react-native-geo-fencing",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Native modules to determine if a location is within defined geographical boundaries using Google Geometry library",
   "main": "index.js",
   "repository": {
