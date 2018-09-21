@@ -31,8 +31,8 @@ public class GeoFencing extends ReactContextBaseJavaModule {
         Callback completionCallback) {
 
       LatLng locationPoint = new LatLng(
-          point.getDouble("lat"),
-          point.getDouble("lng")
+          point.getDouble("latitude"),
+          point.getDouble("longitude")
       );
 
       List<LatLng> polygonList = new ArrayList<>();
@@ -41,8 +41,8 @@ public class GeoFencing extends ReactContextBaseJavaModule {
         ReadableMap vertex = polygon.getMap(i);
         polygonList.add(
             new LatLng(
-              vertex.getDouble("lat"),
-              vertex.getDouble("lng")
+              vertex.getDouble("latitude"),
+              vertex.getDouble("longitude")
             )
         );
       }
