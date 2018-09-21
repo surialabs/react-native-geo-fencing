@@ -13,16 +13,16 @@ RCT_EXPORT_METHOD(
 {
 
   CLLocationCoordinate2D locationPoint = CLLocationCoordinate2DMake(
-    [[point objectForKey:@"lat"] doubleValue],
-    [[point objectForKey:@"lng"] doubleValue]
+    [[point objectForKey:@"latitude"] doubleValue],
+    [[point objectForKey:@"longitude"] doubleValue]
   );
 
   GMSMutablePath *polygonPath  = [GMSMutablePath path];
 
   for(int i = 0; i < [polygon count]; i++) {
     [polygonPath addCoordinate:CLLocationCoordinate2DMake(
-      [[polygon[i] objectForKey:@"lat"] doubleValue],
-      [[polygon[i] objectForKey:@"lng"] doubleValue]
+      [[polygon[i] objectForKey:@"latitude"] doubleValue],
+      [[polygon[i] objectForKey:@"longitude"] doubleValue]
     )];
   }
 
