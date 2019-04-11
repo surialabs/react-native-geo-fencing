@@ -109,7 +109,7 @@ Within ```ios/``` directory of your react-native app:
   }
   ```
 
-3. Edit ```android/src/.../MainActivity.java```
+3. Edit ```android/src/.../MainApplication.java```
   ```java
   // ...
   import com.surialabs.rn.geofencing.GeoFencingPackage;// <--
